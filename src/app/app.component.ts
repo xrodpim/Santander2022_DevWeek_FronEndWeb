@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Santander2022_DevWeek_FronEndWeb';
+  title = 'Santander2022 DevWeek FronEndWeb Bankline';
 }

@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9c3e0617-80e2-43ff-80e4-36490732660c"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Santander2022_DevWeek_FronEndWeb": {
+    "bankline-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/santander2022-dev-week-fron-end-web",
+            "outputPath": "dist/bankline-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -68,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Santander2022_DevWeek_FronEndWeb:build:production"
+              "browserTarget": "bankline-app:build:production"
             },
             "development": {
-              "browserTarget": "Santander2022_DevWeek_FronEndWeb:build:development"
+              "browserTarget": "bankline-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Santander2022_DevWeek_FronEndWeb:build"
+            "browserTarget": "bankline-app:build"
           }
         },
         "test": {
@@ -102,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "Santander2022_DevWeek_FronEndWeb"
+  "defaultProject": "bankline-app"
 }

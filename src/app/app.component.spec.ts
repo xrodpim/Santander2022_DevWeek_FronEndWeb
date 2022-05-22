@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Santander2022_DevWeek_FronEndWeb'`, () => {
+  it(`should have as title 'bankline-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Santander2022_DevWeek_FronEndWeb');
+    expect(app.title).toEqual('bankline-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Santander2022_DevWeek_FronEndWeb app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('bankline-app app is running!');
   });
 });
